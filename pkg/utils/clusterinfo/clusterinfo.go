@@ -48,6 +48,14 @@ type TiKVInfo struct {
 	Labels     map[string]string `json:"labels"`
 }
 
+type TiFlashInfo struct {
+	Version string            `json:"version"`
+	IP      string            `json:"ip"`
+	Port    uint              `json:"port"`
+	Status  ComponentStatus   `json:"status"`
+	Labels  map[string]string `json:"labels"`
+}
+
 type AlertManagerInfo struct {
 	IP         string `json:"ip"`
 	Port       uint   `json:"port"`
